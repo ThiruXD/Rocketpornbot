@@ -12,9 +12,6 @@ from spam import bot
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
-                    level=logging.WARNING)
-
 API_ID = API_ID
 API_HASH = API_HASH 
 STRING_SESSION = STRING_SESSION
