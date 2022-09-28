@@ -9,7 +9,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from spam.decorators import sudo_users_only
 
-@Client.on_message(filters.command(["chipora"], [".", "!", "/", "`"])) 
+@Client.on_message(filters.command
 @sudo_users_only
 async def start(client: Client, msg: Message):
     await msg.reply_text(
@@ -23,7 +23,7 @@ async def start(client: Client, msg: Message):
             ) 
          ) 
 
-@Client.on_message(filters.command(["hmm", "ha"], [".", "!", "/", "'"]))
+@Client.on_message(filters.command
 @sudo_users_only
 async def porn(client: Client, message: Message):       
     sex = await message.reply_text("**Processing.. Your hmm 😁**")
